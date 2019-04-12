@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Snap Scroll</title>
+
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		  <!-- Bootstrap CSS -->
+		  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		  <!-- Main CSS -->
+		  <link rel="stylesheet" href="css/main.css">
+		  <!--Full Page Scroll CSS -->
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.css">
+		  <title>MANOR</title>
+		<style>
+
+			section {
+				height:100vh;
+			}
+					</style>
+	</head>
+	<body>
+
+
+			<div class="container main-container">
+
+				<div class="logo-content " align="center">
+
+      <svg id="logo-left" width="124px" height="235px" viewBox="0 0 124 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="logo-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <polyline id="Path-Copy" stroke="#B19D81" stroke-width="13.934592" transform="translate(63.008950, 112.200000) scale(-1, 1) translate(-63.008950, -112.200000) "
+            points="7 6 36.7356762 32.974803 36.7356762 218.4 72.7754363 183.34859 72.7754363 65.8753777 119.0179 111.855797 119.0179 154.027624"></polyline>
+        </g>
+      </svg>
+
+
+      <svg id="logo-right" width="124px" height="235px" viewBox="0 0 124 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="logo-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <polyline id="Path" stroke="#B19D81" stroke-width="13.934592" points="4.78209983 6 34.517776 32.974803 34.517776 218.4 70.5575361 183.34859 70.5575361 65.8753777 116.8 111.855797 116.8 154.027624"></polyline>
+        </g>
+      </svg>
+
+    </div>
+				<section id="section1">
+					<div class="row">
+          <div class="col"></div>
+          <div class="hero-content col-sm-7">
+            <div class="logo">
+            </div>
+            <h1 class="main-header">The Real Estate Investing Passage for Everyone.</h1>
+            <p class="main-para">Vetted, Curated, and Streamlined Real Estate Investments for Beginners to Seasoned Professionals.</p>
+            <button type="button" class="btn btn-primary btn-standard learn-more-btn">LEARN MORE</button>
+            <button type="button" class="btn btn-primary btn-standard ">INVEST NOW</button>
+          </div>
+          <div class="col"></div>
+        </div>
+				</section>
+				<section id="section2">
+					<div class="row">
+					          <div class="col"></div>
+					          <div class="inner-content col-sm-8">
+
+					            <h2 class="inner-header">Over 80% of U.S. Real Estate is owned by private operators and institutions. How much do you own?</h2>
+					            <p class="inner-para">It’s our mission to take the complexity out of real estate investing and to help you get started or grow your existing portfolio.</p>
+					          </div>
+					          <div class="col"></div>
+					        </div>
+				</section>
+
+			</div>
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/snap-scroll.js"></script>
+		<script>
+			var snapScroll = $("section").SnapScroll({
+				hashes:true
+			});
+			console.log(snapScroll);
+
+			//Listen for active element change
+			//You could listen globally like $(document)
+			$("header").on(snapScroll.eventChangeActive, function(evt, newActive){
+				console.log(evt, newActive);
+			});
+
+			//Listen for visible element change
+			//You could listen on a specific element like $("header")
+			$(document).on(snapScroll.eventChangeVisible, function(evt, visibleList){
+				console.log(evt, visibleList.data);
+			});
+		</script>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.js"></script>!-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
